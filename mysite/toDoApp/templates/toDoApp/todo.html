@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block navbar %}
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link" href="/">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="/todo">To-Do</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
+{% endblock navbar %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Task" aria-label="Task" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="button" id="button-addon2">Button</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
